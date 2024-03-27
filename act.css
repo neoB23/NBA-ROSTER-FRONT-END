@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto,Arial,sans-serif;
+}
+
+/* main nav */
+.nav-top {
+    align-items: center;
+    padding-bottom: 20px;
+    background-image: url("logo-nba.svg");
+    background-size: 6vh;
+    background-repeat: no-repeat;
+    background-position: 14vw;
+    height: 8vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-top ul {
+    
+    position: relative;
+    font-size: 20px;
+    padding-top: 45px;
+    display: flex;
+}
+
+.nav-top li {
+    
+    margin-right: 5vw;
+    list-style: none;
+}
+
+.nav-top a {
+    
+    text-decoration: none;
+    color: rgb(0,0,0,.5);
+}
+
+.nav-top a:hover {
+    color: #fdb927;
+    
+}
+button:hover{
+    background-color: #fdb927;
+}
+/* lower yellow nav */
+.nav-bottom {
+    height:7px;
+    background-color: #1d428a;
+}
+.nav-announce {
+    height: 7vh;
+    background-color: #fdb927;
+}
+body {
+    background-color: #232323;
+}
+
+.container,
+.second-container,
+/* .third-container, */
+.icon{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center; 
+}
+
+button {
+    cursor:pointer;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    font-weight: bolder;
+    border-radius: 25px;
+    border-style: none;
+    height: 50px;
+    width: 90%;
+}
+
+.boxes {
+    margin: 100px;
+    width: 20vh;
+}
+h1{
+    color:white;
+}
+h2 {
+    text-align: center;
+}
+.highlighted-text{
+    
+    color:#fdb927;
+}
+
+/* for mobile */ 
+/* di pa ganun ka responsive wag tawanan :( */
+@media only screen and (max-width: 740px) {
+    .nav-top {
+        width:130vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        background-image: none;
+        justify-content: center;
+        padding: 10px 0;
+        height: auto;
+    }
+
+    .nav-top ul {
+        
+        padding-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-top li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .nav-bottom {
+        width:130vw;
+    }
+    .nav-announce {
+        width:130vw; 
+    }
+    button {
+        margin-left: 30vw;
+        width: 80%;
+    }
+    
+    .boxes {
+        margin: 20px;
+        width: 30vh;
+    }
+.container-proj,
+.secondproj-container,
+.icon{
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center; 
+    background: rgb(15, 15, 15);
+
+}
+}
+.content{
+    display: none;
+    position: absolute;
+    
+}
+.content a{
+    background-color: white;
+    text-align: center;
+    display: block;
+    color:black;
+    min-width: 160px;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:active .btn{
+    background-color: #3e8e41;
+}
